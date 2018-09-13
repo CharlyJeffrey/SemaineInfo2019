@@ -7,7 +7,7 @@
   * Cryptographie en encodage (comment les sites sont sécurisés, encodage de mot-de-passe, etc.)
   * Intelligence Artificielle (Origine, utilisation/utilité, exemple, AI vs jeunes (?pong), etc.)
   * Évolution des langages de programmation (14-17 uniquement)
-  * ?PolyCortex
+  * ?PolyCortex, polyHx
 
 * Activités
   * Défi pyhton (Exercices tirés de Projet Euler ou Coderbyte)
