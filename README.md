@@ -1,4 +1,4 @@
-# Semaine Informatique 9-17 ans été 2019
+﻿# Semaine Informatique 9-17 ans été 2019
 
 ## Contenu de la semaine informatique pour l'été 2019:
 
@@ -10,7 +10,7 @@
   * ?PolyCortex
 
 * Activités
-  * Projet Euler
+  * Défi pyhton (Exercices tirés de Projet Euler ou Coderbyte)
   * Binaire (théorie, utilité, convertion décimal <-> binaire, ASCII, etc.)
   * ?Micro-controlleur
 
