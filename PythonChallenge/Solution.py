@@ -1,13 +1,41 @@
 """
 Solution des défis python
 """
+import datetime
 
-def testSolution(func, *args, **kargs):
+# Obtient la date actuelle (yyyy/mm/dd)
+now = str(datetime.datetime.now())
+
+YEAR = int(now[0:4])
+MONTH = int(now[5:7])
+DAY = int(now[8:10]) 
+
+def testSolution(func, *args):
     """
     Fonction pour tester une certaine fonction donnée en argument.
     Affiche le résultat de la fonction
     """
-    print(func(*args, **kargs))
+    if (len(args) < 1):
+        format_args = (func.__name__, "", func())
+    else :
+        format_args = (func.__name__, *args, func(*args))
+    print("Utilisation de {}({}): résultat: {}".format(*format_args))
+¸
+
+def HelloWorld():
+    """
+    Fonction d'introduction aux commandes input/print.
+    Demande à l'utilisateur son nom, son âge ainsi une chose qu'il aime.
+    Affiche ensuite ces information sous la forme d'un message amicale.
+    """
+    # Demande le nom de la personne
+    nom = input("Quel est votre nom? ")
+    # Demande l'âge
+    age = input("Quel est votre âge? ")
+    # Demande une chose que la personne aime
+    aime = input("Nommez une chose que vous aimez: ")
+    # Affiche un petit message amicale
+    return "Bonjour " +nom+ ", vous avez " +age+" ans et vous aimez "+aime
 
 def inverseCaps(mot):
     """
@@ -111,7 +139,7 @@ def somme(n):
     return sum
 
 # Solution du probleme 
-def obtenirFactorielle(n):
+def factorielle(n):
     """
     Fonction pour obtenir la valeur de n!. (Expliquez la définition de n! avant)
     Peut se faire à l'aide de boucle ou de récursion.
@@ -201,7 +229,7 @@ def heureEnSecondes(x, y, z):
     return s
 
 # Solution du probleme 
-def secondeEnHeures(s):
+def secondeEnHeures(sec):
     """
     Fonction pour convertir un nombre de seconde en temps sous le format
     xh:y:z. Ce qui est retourné doit être un string!
@@ -218,24 +246,155 @@ def secondeEnHeures(s):
     h = 3600
     m = 60
     # Détermine le nombre d'heure entière que le input contient
-    x = s // h
+    x = sec // h
     # Soustrait le nombre de secondes correspondant à la valeur initiale
-    s -= x * h
+    restant = sec - (x * h)
     # Détermine le nombre de minutes entière que la nouvelle valeur de s contient
-    y = s // m
+    y = restant // m
     # Soustrait le nombre de seconde correspondant
-    s -= y * m
+    restant -= (y * m)
     # Converti le résultat en string
-    temps += (str(x) + "h:" + str(y) + "m:" + str(s) + "s")
+    temps += (str(x) + "h:" + str(y) + "m:" + str(restant) + "s")
     return temps
+
+# Solution du probleme
+def obtenirAge(dateDeNaissance):
+    """
+    Function pour obtenir l'age d'une personne selon la date fournie
+    en input. Le format de la date devrait etre «yyyy/mm/dd».
+
+    Notions à savoir:
+        - Manipulation de string (.split())
+        - Manipulation de listes (index)
+        - Opération logique
+    """
+    # Sépare les éléments de la date
+    dateNaissanceSplit = dateDeNaissance.split("/")
+    # Convertie et associe les valeurs
+    aNaissance = int(dateNaissanceSplit[0])
+    mNaissance = int(dateNaissanceSplit[1])
+    jNaissance = int(dateNaissanceSplit[2])
+    # Première approximation de l'age selon la différence des années
+    age = YEAR - aNaissance
+    # Corrige l'erreur fait sur les mois
+    if (MONTH < mNaissance) :
+        # Corrige l'Age
+        age -= 1
+    # Vérifie si le mois de naissance et actuel sont les meme
+    elif (MONTH == mNaissance) :
+        # Corrige l'erreur fait sur les jours
+        if (DAY < jNaissance) :
+            # Corrige l'age
+            age -= 1
+    # Retourne l'age
+    return age
+
+# Solution du probleme
+def convertirAgeEnSeconde(age):
+    """
+    Fonction pour convertir l'âge d'une personne en secondes.
+    Il est assumé que l'argument «age» est de type int.
+
+    Notions à savoir:
+        - Convertions minute;heure;jour;annee
+    """
+    # Convertion de minute -> heure -> jour
+    m = 60      # 1 minute == 60 secondes
+    h = 60 * m  # 1 heure == 60 minutes
+    j = 24 * h  # 1 jour == 24 heures
+    a = 365 * j # 1 ans == 365 jours
+    # Converti l'age en seconde
+    temps_sec = (age * a)
+    # Retourne la valeur
+    return temps_sec
+
+# Solution du probleme 
+def convertirSecondeEnAge(sec):
+    """
+    Fonction pour convertir un nombre de secondes en age (années).
+    Il est assumé que l'argument «sec» est de type int.
+
+    Notions à savoir:
+        - Possible d'utiliser une fonction dans une autre fonction.
+    """
+    # Convertion
+    a = convertirAgeEnSeconde(1)    # Obtient le nombre de seconde d'une année
+    # Obtient le nombre d'année compris dans le temps en seconde
+    temps = sec / a
+    # Retourne la valeur de temps<
+    return temps
+
+# solution du probleme
+def convertirAnniversaire():
+    """
+    Fonction qui demandera l'anniversaire de l'utilisateur sour le format (yyyy/mm/dd)
+    et qui le convertie sous le format day month year.
+    """
+    # Tuple des mois possible
+    month = ('Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre')
+    # Demande à l'utilisateur sa date d'anniversaire
+    date = input("Quel est votre date d'anniversaire? (yyyy/mm/dd) ")
+    # Sépare la date à chaque '/'
+    date_split = date.split("/")
+    # Obtient la date sous le nouveau format
+    date_new = date_split[2] +" "+ month[int(date_split[1])-1] +" "+ date_split[0]
+    # Retourne la date
+    return date_new
+
+# Solution du probleme
+def obtenirNombrePair(n):
+    """
+    Fonction pour obtenir les «n» premiers nombre pairs et les places dans une liste.
+    """
+    # Créer une liste vide
+    nombres = []
+    # Boucle tant que la liste n'est pas remplie
+    i = 0
+    while (len(nombres) != n):
+        nombres.append(i)
+        i += 2
+    # Retourne la liste
+    return nombres
+
+# Solution du probleme
+def obtenirNombreimpair(n):
+    """
+    Fonction pour obtenir les «n» premiers nombres impairs.
+    """
+    # Créer une liste vide
+    nombres = []
+    # Boucle tant que la liste n'est pas remplie
+    i = 1
+    while (len(nombres) != n):
+        nombres.append(i)
+        i += 2
+    # Retourne la liste
+    return nombres
+
+# Solution du probleme 
+def estPair(k):
+    """
+    Fonction pour déterminer si le nombre «k» est pair.
+    Sans l'utilisation de la fonction modulo et '&'.
+    """
+    while (k > 0):
+        k -= 2
+    return k == 0
 
 
 testSolution(inverseCaps, "AbcDEFGhIuGa")
 testSolution(nombreDeVoyelles, "Allo, what's up?")
 testSolution(plusLongMot, "Quel est le plus long mot de cette phrase?")
 testSolution(somme, 10)
-testSolution(obtenirFactorielle, 5)
+testSolution(factorielle, 10)
 testSolution(inverseLeMot, "Fermion")
 testSolution(obtenirMax, [0, 15, 100, 45, 78, 42])
 testSolution(heureEnSecondes, 1, 1, 1)
 testSolution(secondeEnHeures, 3661)
+testSolution(obtenirAge, "1995/08/21")
+testSolution(convertirAgeEnSeconde, 23)
+testSolution(convertirSecondeEnAge, obtenirFactorielle(10))
+#testSolution(convertirAnniversaire)
+testSolution(obtenirNombrePair, 10)
+testSolution(obtenirNombreimpair, 10)
+testSolution(estPair, 15)

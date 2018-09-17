@@ -9,6 +9,13 @@ et retourne le même mot en inversant les minuscules et majuscules.
 #	Enoncé 1	#
 #-#-#-#-#-#-#-#-#-#-#-#-#
 
+Construire la fonction «nombreDeVoyelles(phrase)» acceptant une phrase
+et qui retourne le nombre de voyelles que la phrase contient.
+
+#-#-#-#-#-#-#-#-#-#-#-#-#
+#	Enoncé 1	#
+#-#-#-#-#-#-#-#-#-#-#-#-#
+
 Construire la fonction «plusLongMot(phrase)» acceptant une phrase
 en input et retourne le mot le plus long de cette 
 

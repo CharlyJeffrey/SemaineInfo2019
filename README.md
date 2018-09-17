@@ -10,10 +10,11 @@
   * ?PolyCortex, polyHx
 
 * Activités
-  * Défi pyhton (Exercices tirés de Projet Euler ou Coderbyte)
+  * Défi python (Exercices tirés de Projet Euler ou Coderbyte)
   * Binaire (théorie, utilité, convertion décimal <-> binaire, ASCII, etc.)
   * ?Micro-controlleur
 
 ## TODO
 
 * Everything
+* Classer les défi python selon leur difficulté (et lien entre eux)
