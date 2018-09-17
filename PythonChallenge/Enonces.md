@@ -17,17 +17,17 @@ mais en inversant les minuscules et majuscule. __
 
 ---
 
-__nombreDeVoyelles__ __
-Construire une fonction qui accepte un mot en argument et retourne le nombre
-de voyelles que le mot contient. __
-*Ex: nombreVoyelles(Beryllium)-> 4*
-
----
-
 __inverseLeMot__ __
 Construire une fonction qui accepte un mot en argument et retourne le même mot,
 mais en iversant l'ordre des lettres. __
 *Ex: inverseLeMot(Fermion) -> niomreF*
+
+---
+
+__nombreDeVoyelles__ __
+Construire une fonction qui accepte un mot en argument et retourne le nombre
+de voyelles que le mot contient. __
+*Ex: nombreVoyelles(Beryllium)-> 4*
 
 ---
 
@@ -43,5 +43,43 @@ Construire une fonction qui accepte un nombre entier «n» et qui retourne
 la valeur de n!. __
 *Ex: factorielle(5) -> 5x4x3x2x1 = 120*
 
+---
+
+__estPair__ __
+Construire une fonction qui accepte un entier «k» en argument et
+qui retourne vrai si cet entier est pair et faux sinon.__
+L'utilisation de l'opérateur modulo (%) n'est pas permi.
+*Ex: estPair(5) -> False*
+
+---
+
+__obtenirMax__ __
+Construire une fonction qui accepte une liste de nombre en argument et
+qui retourne le plus grand élément de cette liste.__
+*Ex: obtenirMax([1,2,4,5,1,42,5]) -> 42*
+
+---
+
+__obtenirAge__ __
+Construire une fonction qui accepte en argument une date d'anniversaire sous
+le format "(yyyy/mm/dd)" et qui retourne l'âge associé à cette date.__
+*Ex: obtenirAge("1995/08/21") -> 23*__
+_*Optionnel: Utiliser le module «datetime» pour obetnir la date actuelle*_
+
+---
+
+__convertirDate__ __
+Construire une fonction qui accepte en argument une date sous
+le format "(yyyy/mm/dd)" et qui retourne la date sous le formate "jour mois année".__
+*Ex: convertirAge("1995/08/21") -> 21 Août 1995*
+
+---
+
+__plusLongMot__ __
+Construire une fonction qui accepte une phrase en argument et qui retourne
+le plus long mot de cette phrase. Les ponctuations doivent être ignorés.__
+*Ex: plusLongMot("Le plus long mot de cette phrase est...") -> "phrase"*
+
+---
 
 
