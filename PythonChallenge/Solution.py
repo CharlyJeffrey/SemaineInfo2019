@@ -20,7 +20,7 @@ def testSolution(func, *args):
     else :
         format_args = (func.__name__, *args, func(*args))
     print("Utilisation de {}({}): résultat: {}".format(*format_args))
-¸
+
 
 def HelloWorld():
     """
@@ -290,7 +290,7 @@ def obtenirAge(dateDeNaissance):
     return age
 
 # Solution du probleme
-def convertirAgeEnSeconde(age):
+def ageEnSeconde(age):
     """
     Fonction pour convertir l'âge d'une personne en secondes.
     Il est assumé que l'argument «age» est de type int.
@@ -318,7 +318,7 @@ def convertirSecondeEnAge(sec):
         - Possible d'utiliser une fonction dans une autre fonction.
     """
     # Convertion
-    a = convertirAgeEnSeconde(1)    # Obtient le nombre de seconde d'une année
+    a = ageEnSeconde(1)    # Obtient le nombre de seconde d'une année
     # Obtient le nombre d'année compris dans le temps en seconde
     temps = sec / a
     # Retourne la valeur de temps<
@@ -392,8 +392,8 @@ testSolution(obtenirMax, [0, 15, 100, 45, 78, 42])
 testSolution(heureEnSecondes, 1, 1, 1)
 testSolution(secondeEnHeures, 3661)
 testSolution(obtenirAge, "1995/08/21")
-testSolution(convertirAgeEnSeconde, 23)
-testSolution(convertirSecondeEnAge, obtenirFactorielle(10))
+testSolution(ageEnSeconde, 23)
+testSolution(convertirSecondeEnAge, factorielle(10))
 #testSolution(convertirAnniversaire)
 testSolution(obtenirNombrePair, 10)
 testSolution(obtenirNombreimpair, 10)

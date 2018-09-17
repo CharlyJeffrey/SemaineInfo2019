@@ -31,13 +31,6 @@ mais en iversant l'ordre des lettres. __
 
 ---
 
-__estPair__ __
-Construire une fonction qui accepte un nombre entier «k» en argument et
-retourne _True_ si ce nombre est pair et _False_ sinon.__
-*Ex: estPair(3) -> _False_*
-
----
-
 __somme__ __
 Construire une fonction qui accepte un nombre entier «n» et qui retourne la
 somme de tous les entiers plus petit que «n». __
@@ -50,37 +43,5 @@ Construire une fonction qui accepte un nombre entier «n» et qui retourne
 la valeur de n!. __
 *Ex: factorielle(5) -> 5x4x3x2x1 = 120*
 
----
 
-__obtenirNombrePair__ __
-Construire une fonction qui accepte un nombre entier «n» en argument et
-qui retourne une liste des «n» permiers nombres pairs.__
-*Ex: obtenirNombrePair(5) -> [0, 2, 4, 6, 8]*
 
---- 
-
-__plusLongMot__ __
-Construire une fonction qui accepte une phrase en argument et que retourne
-le plus long mot de cette phrase.__
-*Ex: plusLongMot("Beryllium est bonne en info.") -> "Beryllium"*
-
----
-
-__obtenirMax__ __
-Construire une fonction qui accepte une liste de nombres en argument
-et qui retourne le plus grand nombre de cette liste.__
-*Ex: obtenirMax([1, 10, 15, 7, 42, 32]) -> 42*
-
----
-
-__secondeEnHeure__ __
-Construire une fonction qui accepte un nombre entier de secondes et converti
-ce temps sous le format xh:ym:zs.__
-*Ex: secondeEnHeure(3661) -> "1h:1m:1s"*
-
----
-
-__ageEnSeconde__ __
-Construire une fonction qui accepte un âge en arguement et retourne
-le nombre de secondes correspondant.__
-*Ex: ageEnSeconde(23) -> 725328000*
