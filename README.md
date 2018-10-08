@@ -3,16 +3,20 @@
 ## Contenu de la semaine informatique pour l'été 2019:
 
 * Présentations
-  * Introduction I (Informatique, langage Python, la semaine en générale, etc.)
-  * Cryptographie en encodage (comment les sites sont sécurisés, encodage de mot-de-passe, etc.)
-  * Intelligence Artificielle (Origine, utilisation/utilité, exemple, AI vs jeunes (?pong), etc.)
-  * Évolution des langages de programmation (14-17 uniquement)
-  * ?PolyCortex, polyHx
+  * Introduction de la semaine (Informatique, la semaine en générale, etc.)
+  * Introduction à programmation en Python (Variables, conditions, type, etc.)
+  * Cryptographie et encodage (comment les sites sont sécurisés, encodage de mot-de-passe, etc.)
+  * Intelligence Artificielle (Origine, utilisation/utilité, exemple, ?AI vs jeunes (?pong), etc.)
+  * Évolution des langages de programmation (14-17 uniquement - ?11-13)
+  * PolyHx
 
 * Activités
+  * Introduction à la programmation en Python (?faire parallelement avec _Introduction à Python_)
   * Défi python (Exercices tirés de Projet Euler ou Coderbyte)
+  * Tic-Tac-Toe (code troué)
+  * Pong (?Code troué)
   * Binaire (théorie, utilité, convertion décimal <-> binaire, ASCII, etc.)
-  * ?Micro-controlleur
+  * Cryptographie et encodage
 
 ## TODO
 
