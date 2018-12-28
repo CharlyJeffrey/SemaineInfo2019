@@ -1,7 +1,7 @@
 # Tic-Tac-Tow game
 
 ## Description de l'activité
-Durant cette activité, les jeunes programmeront une version du jeu [Tic-Tac-Toe]
+Durant cette activité, les jeunes programmeront une version du jeu _Tic-Tac-Toe_
 dont l'intération se fait via la console (aucune interface grapique!).
 L'animation de cette activité est interactive avec les jeunes: les animateurs 
 déterminent les mécanismes de base du jeu avec les jeunes, de quelles manières
@@ -13,7 +13,7 @@ pratiquement seuls.
 
 ## Intérêt de l'activité
 Le but de cette activité est de montrer aux jeunes comment prendre un 
-certain sujet -ici le jeu [Tic-Tac-Toe]- relativement simplement simple et de
+certain sujet -ici le jeu _Tic-Tac-Toe_- relativement simplement simple et de
 réussir à le reproduire à l'aide d'un code. Ils devront donc réflichir à la
 manière dont une partie de Tic-Tac-Toe se déroule pour être en mesure de bien 
 reproduire le jeu à l'aide de leur programme. L'activité développe leur capacité
@@ -21,7 +21,7 @@ reproduire le jeu à l'aide de leur programme. L'activité développe leur capac
 
 ## Déroulement de l'activité
 L'activité devrait débutée en demandant aux jeunes s'ils connaissent bien le jeu
-[Tic-Tac-Toe] et de démenteler les mécanismes du jeu avec eux. Comment le jeu se
+_Tic-Tac-Toe_ et de démenteler les mécanismes du jeu avec eux. Comment le jeu se
 joue? Comment peut-on gagner? Quelles sont les règles? etc. Cette partie est
 cruciale -surtout pour les plus jeunes- car ce qui sera dit servira de base pour
 la programmation du jeu.  
@@ -33,7 +33,7 @@ Comment obtenir le choix des joueurs? Comment déterminer quel joueur joue? etc.
 Adaptez-vous aux jeunes! Les 9-10 auront énormement de plus de difficulté que
 les 14-17; aider les si ils pédalent ou vont dans une direction trop compliquée!
   
-Lorsque le [brainstorm] est terminé, c'est le temps de faire la programmation. 
+Lorsque le _brainstorming_ est terminé, c'est le temps de faire la programmation. 
 Les plus jeunes peuvent commencer avec une version trouée, ou non. Les plus
 vieux feront le programme au complet par eux-même. L'animation devrait être
 adaptée selon le groupe: une animation magistrale devrait bien fonctionner avec
