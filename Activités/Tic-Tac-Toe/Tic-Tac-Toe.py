@@ -8,20 +8,20 @@ Auteur: Fermion & Bérillium
 # Contient les symboles
 symboles = ["X", "O"]
 
-
+# Obtient le nom des joueurs
 P1 = input("Joueur 1, quel est votre nom? ")
 P2 = input("Joueur 2, quel est votre nom? ")
 
+# Tableau pour contenir le nom des joueurs
 joueurs = [P1, P2]
 
-# Variable "switch" pour déterminer qui joue (0 == joueur 1; 1 == joueur 2)
-quiJoue = 0     # Joueur 1 par défaut
+# Variable "switch" pour déterminer qui joue (False == joueur 1; True == joueur 2)
+quiJoue = False
 
 def affiche_grille(grid):
     """
-    Fonction pour afficher la grille de jeu de la forme
+    Fonction pour afficher la grille de jeu
     """
-
     print("    0   1   2  ")
     print("  *---*---*---*")
     for i in range(3):
@@ -37,19 +37,27 @@ def choixJoueur(grid):
         affiche_grille(grid)
         print("{} où voulez-vous joueur?".format(joueurs[quiJoue]))
         print("Entrez l'indice de la rangé espace de celle de la colone. Exemple: 0 1.\n")
+
+        # Sépare le input aux espacements
         choix = input().split()
 
+        # Vérifie si le input séparé n'est pas composé de 2 termes
         if len(choix) != 2:
             print("Votre choix doit être de la forme suivante: i j")
             print("'i' est le numéro de la rangé et 'j' celle de la colonne.\n")
         
         else:
+            # Obtient la rangé/colonne
             row, col = choix[0], choix[1]
+            # Essaie de convertir le input en 'int'
             try:
                 row, col = int(row), int(col)
+                # Obtient la position dans le tableau
                 index = 3*row + col
+                # Vérifie si les nombres entrés sont valides
                 if (row < 0 or 2 < row) or (col < 0 or 2 < col):
                     print("Vous devez entrer des chiffres entre 0 et 2 inclusivement!\n")
+                # Vérifie si la case est vide
                 elif (grid[index] != "?"):
                     print("La case que vous avez choisie a déjà été prise!!!\n")
                 else:
@@ -74,6 +82,7 @@ def gagnant(grille):
     
     # Boucle sur les arrangements gagnants
     for cout in winning:
+        # Vérifie si une combinaison gagnante se trouve dans la grille
         if _w == grille[cout[0]] + grille[cout[1]] + grille[cout[2]]:
             return True
     return False
