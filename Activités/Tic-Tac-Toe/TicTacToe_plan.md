@@ -2,7 +2,7 @@
 
 ## Description de l'activité
 Durant cette activité, les jeunes programmeront une version du jeu _Tic-Tac-Toe_
-dont l'intération se fait via la console (aucune interface grapique!).
+dont l'intéraction se fait via la console (aucune interface grapique!).
 L'animation de cette activité est interactive avec les jeunes: les animateurs 
 déterminent les mécanismes de base du jeu avec les jeunes, de quelles manières
 ces mécanismes seront implémentés dans le code puis aideront les jeunes avec 
@@ -14,7 +14,7 @@ pratiquement seuls.
 ## Intérêt de l'activité
 Le but de cette activité est de montrer aux jeunes comment prendre un 
 certain sujet -ici le jeu _Tic-Tac-Toe_- relativement simplement simple et de
-réussir à le reproduire à l'aide d'un code. Ils devront donc réflichir à la
+réussir à le reproduire à l'aide d'un code. Ils devront donc réfléchir à la
 manière dont une partie de Tic-Tac-Toe se déroule pour être en mesure de bien 
 reproduire le jeu à l'aide de leur programme. L'activité développe leur capacité
 à faire l'abstraction d'un certain problème pour faciliter sa résolution.
@@ -28,7 +28,7 @@ la programmation du jeu.
   
 Lorsque les jeunes ont bien décortiqué les principes du jeu, il faut maintenant 
 les aider à penser comment implémenter ces mécanismes sous forme de code.
-Poser des questions peut les aider à réflichir: Comment représenter la grille?
+Poser des questions peut les aider à réfléchir: Comment représenter la grille?
 Comment obtenir le choix des joueurs? Comment déterminer quel joueur joue? etc.
 Adaptez-vous aux jeunes! Les 9-10 auront énormement de plus de difficulté que
 les 14-17; aider les si ils pédalent ou vont dans une direction trop compliquée!
@@ -43,7 +43,7 @@ eux-même. Sentez la vibe de votre groupe.
 ## Difficulté de l'activité
 La difficulté de l'activité sera de faire l'abstraction du jeu pour réussir à le
 programmer. La majorité des jeunes, si ce n'est pas la totalité, n'auront jamais
-réflichie de cette manière et ce n'est pas evident la première fois. Même si le
+réfléchie de cette manière et ce n'est pas evident la première fois. Même si le
 jeu Tic-Tac-Toe est simple à jouer en vrai, les jeunes réaliseront que d'essayer
 d'en faire la programmation est assez ardu et demande une façon de penser
 différente de ce qu'il utilise normalement lorsqu'ils s'attaquent à un problème.
